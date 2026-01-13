@@ -28,15 +28,28 @@ class TicTacToe:
             [0,4,8], [2,4,6]
         ]
         for combo in wins:
-            if all(b[i] == p for i in combo):
+            win = True
+            for i in combo:
+                if b[i] != p:
+                    win = False
+                    break
+            if win:
                 return True
         return False
 
     def is_draw(self):
-        return all(cell in ["X", "O"] for cell in self.board)
+        for cell in self.board:
+            if cell not in ["X", "O"]:
+                return False
+        return True
+
 
     def switch_player(self):
-        self.current_player = "O" if self.current_player == "X" else "X"
+        if self.current_player == "X":
+            self.current_player = "O"
+        else:
+            self.current_player = "X"
+
 
     def play(self):
         print("Welcome to Tic-Tac-Toe!")
