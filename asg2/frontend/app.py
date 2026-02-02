@@ -7,7 +7,7 @@ ORDER_STATUSES = ["placed", "preparing", "packed", "ready", "delivered", "cancel
 PAYMENT_STATUSES = ["pending", "paid"]
 
 st.set_page_config(page_title="Food Delivery", layout="wide")
-st.title("🍔 Food Delivery")
+st.title("Food Delivery")
 
 if "user_id" not in st.session_state:
     st.session_state.user_id = None
