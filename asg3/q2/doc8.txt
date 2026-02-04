@@ -1,0 +1,6 @@
+just some random text
+this contains duplicate phone numbers only
+1234567891
+2345678912
+1234567891
+1234567891

@@ -1,0 +1,4 @@
+checking for duplicates
+tim@apple.com
+timo@apple.com
+tim@apple.com
